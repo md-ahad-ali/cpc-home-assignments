@@ -1,13 +1,8 @@
 # Flask + MySQL Intro App
 
-A simple Flask application that connects to MySQL and outputs data through a REST API. Built as a learning exercise following the [Flask quickstart guide](https://flask.palletsprojects.com/en/stable/quickstart/).
+A simple Flask application that connects to MySQL and outputs data through a REST API
 
-This app reuses the **same database schema as the main `backend/` (Eco Pulse) project** — `users`, `buildings`, `rooms`, `energy_logs` — but reads it with Flask + PyMySQL instead of FastAPI + SQLAlchemy, to practice the Flask/MySQL workflow against real project data.
-
-## Author
-
-- **Name:** Ha Vu (hachan140)
-- **Course:** Digital Transformation, Semester 1 — Python
+This app reuses the **same database schema as Eco Pulse project** — `users`, `buildings`, `rooms`, `energy_logs` — but reads it with Flask + PyMySQL instead of FastAPI + SQLAlchemy, to practice the Flask/MySQL workflow against real project data.
 
 ## Tech Stack
 
