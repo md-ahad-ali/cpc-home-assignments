@@ -13,7 +13,6 @@ class Room:
         self.set_room_name(room_name)
 
     def initialize(self):
-        """Nothing to prepare yet. Kept so all classes share the same shape."""
         pass
 
     # ---- getters ----

@@ -16,7 +16,6 @@ class Building:
         self.set_area_sqm(area_sqm)
 
     def initialize(self):
-        """Start with an empty room list."""
         self._rooms = []
 
     # ---- getters ----

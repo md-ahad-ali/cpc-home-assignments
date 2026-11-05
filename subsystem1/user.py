@@ -23,7 +23,6 @@ class User:
         self.set_role(role)
 
     def initialize(self):
-        """Reset the session state of the user."""
         self._logged_in = False
         self._failed_logins = 0
 
