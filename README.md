@@ -102,6 +102,3 @@ curl http://127.0.0.1:5000/rooms/1/energy-logs
 ]
 ```
 
-## Repository
-
-Project source: <ADD_YOUR_GITHUB_REPO_LINK_HERE>
