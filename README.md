@@ -102,6 +102,27 @@ curl http://127.0.0.1:5000/rooms/1/energy-logs
 ]
 ```
 
+## Error Handling
+
+All custom exceptions live in `errors.py`, with one base class per subsystem:
+
+- `DatabaseError` / `DatabaseConnectionError` — failures connecting to or querying MySQL (db layer)
+- `UserError` / `UserNotFoundError` — users subsystem
+- `BuildingError` / `InvalidBuildingIdError` / `BuildingNotFoundError` — buildings subsystem
+- `RoomError` / `InvalidRoomIdError` / `RoomNotFoundError` — rooms subsystem
+- `EnergyLogError` / `InvalidEnergyLogRoomIdError` — energy-logs subsystem
+
+They all inherit from `AppError`, which carries an HTTP `status_code` and a `to_dict()` used by a single Flask `@app.errorhandler(AppError)` to always return JSON like `{"error": "..."}` with the right status code (400 for bad input, 404 for missing resources, 503 for database failures).
+
+## Testing
+
+Unit tests live in `tests/test_app.py` (15 tests) and use Flask's test client plus `unittest.mock` to simulate database successes/failures without needing a real MySQL instance.
+
+```bash
+pip install -r requirements.txt
+pytest -v
+```
+
 ## Repository
 
 Project source: <ADD_YOUR_GITHUB_REPO_LINK_HERE>
