@@ -1,8 +1,8 @@
-# Flask + MySQL Intro App
+# Flask + MySQL Intro App - With Exception Handling and Unit tests
 
 A simple Flask application that connects to MySQL and outputs data through a REST API
 
-This app reuses the **same database schema as Eco Pulse project** — `users`, `buildings`, `rooms`, `energy_logs` — but reads it with Flask + PyMySQL instead of FastAPI + SQLAlchemy, to practice the Flask/MySQL workflow against real project data.
+This app reuses the **same database schema as Eco Pulse project** — `users`, `buildings`, `rooms`, `energy_logs`
 
 ## Tech Stack
 
@@ -110,7 +110,6 @@ All custom exceptions live in `errors.py`, with one base class per subsystem:
 - `UserError` / `UserNotFoundError` — users subsystem
 - `BuildingError` / `InvalidBuildingIdError` / `BuildingNotFoundError` — buildings subsystem
 - `RoomError` / `InvalidRoomIdError` / `RoomNotFoundError` — rooms subsystem
-- `EnergyLogError` / `InvalidEnergyLogRoomIdError` — energy-logs subsystem
 
 They all inherit from `AppError`, which carries an HTTP `status_code` and a `to_dict()` used by a single Flask `@app.errorhandler(AppError)` to always return JSON like `{"error": "..."}` with the right status code (400 for bad input, 404 for missing resources, 503 for database failures).
 
