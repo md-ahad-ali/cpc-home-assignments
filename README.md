@@ -122,6 +122,3 @@ pip install -r requirements.txt
 pytest -v
 ```
 
-## Repository
-
-Project source: <ADD_YOUR_GITHUB_REPO_LINK_HERE>
