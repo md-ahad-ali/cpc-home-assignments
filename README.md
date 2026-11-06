@@ -4,15 +4,13 @@ FH Dortmund · Master's Capstone Project (MDT 7226) · Group 5
 
 A web-based platform that helps buildings such as universities, offices and homes use less energy. The system predicts energy demand, detects abnormal consumption and recommends energy-saving actions. It also tracks electricity cost, CO₂ emissions and a sustainability score for each building.
 
-**Architecture:** 3-tier modular web app with Flask, Pandas for CSV parsing, SQLAlchemy ORM and the OpenAI API.
-
 ---
 
 ## 1. Team Overview
 
 | Member | Student ID | Subsystem  | Scope | Code |
 |---|---|---|---|---|
-| Thi Ha Vu | MDT 7226574 | 1 · User & Building Management | FR01, FR02 | [`src/subsystem1_user_building.py`](src/subsystem1_user_building.py) |
+| Thi Ha Vu | MDT 7226574 | 1 · User & Building Management | FR01, FR02 | [`src/subsystem1`](src/subsystem1) |
 | S M Saifur Rahman | MDT 7226434 | 2 · Energy Data Management | FR03–FR05 | [`src/subsystem2_energy_data.py`](src/subsystem2_energy_data.py) |
 | Md. Ahad Ali | MDT 7226162 | 3 · Energy Analytics & Sustainability | FR06–FR08 | [`src/subsystem3_analytics.py`](src/subsystem3_analytics.py) |
 | MD Sakib Khan | MDT 7225912 | 4 · Recommendations & Reporting | FR09, FR10 | [`src/subsystem4_recommendations.py`](src/subsystem4_recommendations.py) |
@@ -77,7 +75,7 @@ Owner: MD Sakib Khan
 Each file has a short demo at the bottom. Python 3.8 or newer is enough, with no extra packages.
 
 ```bash
-python src/subsystem1_user_building.py
+python src/subsystem1/main.py
 python src/subsystem2_energy_data.py
 python src/subsystem3_analytics.py
 python src/subsystem4_recommendations.py
