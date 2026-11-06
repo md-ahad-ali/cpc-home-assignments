@@ -8,11 +8,13 @@ A web-based platform that helps buildings such as universities, offices and home
 
 ## 1. Team Overview
 
-| Member | Student ID | Subsystem  | Scope |
-|---|---|---|---|---|
+Here is the corrected and properly formatted Markdown table:
+
+| Member | Student ID | Subsystem | Scope |
+| --- | --- | --- | --- |
 | Thi Ha Vu | MDT 7226574 | 1 · User & Building Management | FR01, FR02 |
-| S M Saifur Rahman | MDT 7226434 | 2 · Energy Data Management | FR03–FR05 | 
-| Md. Ahad Ali | MDT 7226162 | 3 · Energy Analytics & Sustainability | FR06–FR08 | 
+| S M Saifur Rahman | MDT 7226434 | 2 · Energy Data Management | FR03–FR05 |
+| Md. Ahad Ali | MDT 7226162 | 3 · Energy Analytics & Sustainability | FR06–FR08 |
 | MD Sakib Khan | MDT 7225912 | 4 · Recommendations & Reporting | FR09, FR10 |
 
 Each member implements at least 3 classes for their own subsystem. Every class has a constructor, an initialization method , and getter and setter methods.
