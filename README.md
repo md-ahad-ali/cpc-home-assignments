@@ -82,3 +82,7 @@ python src/subsystem2_energy_data.py
 python src/subsystem3_analytics.py
 python src/subsystem4_recommendations.py
 ```
+
+## Link to video 
+
+https://youtu.be/taqI6Jr45U0
