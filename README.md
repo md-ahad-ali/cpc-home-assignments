@@ -1,4 +1,5 @@
 # Energy Pipeline
+***Video: https://drive.google.com/drive/folders/1Ho6cv0odCKdPfS4sHJSkIUMwoBazxItP?usp=drive_link ***
 
 A small Python library that reads smart meter events, filters out noise, and calculates the carbon emissions of each event.
 
